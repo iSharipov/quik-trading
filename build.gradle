@@ -7,6 +7,7 @@ buildscript {
 
 plugins {
     id 'java'
+    id 'jacoco'
     id 'org.springframework.boot' version '2.7.3'
 }
 
@@ -37,3 +38,12 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled true
+        html.enabled false
+    }
+}
+
+check.dependsOn jacocoTestReport
