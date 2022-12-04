@@ -2,7 +2,9 @@ package com.quik.strategy;
 
 import com.quik.algo.Algo;
 import com.quik.model.Signal;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Strategy2 implements TradingStrategy {
     @Override
     public void execute() {
