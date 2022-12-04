@@ -1,6 +1,6 @@
 package com.quik.algo;
 
-class Algo {
+public class Algo {
     public void doAlgo() {
         System.out.println("doAlgo");
     }

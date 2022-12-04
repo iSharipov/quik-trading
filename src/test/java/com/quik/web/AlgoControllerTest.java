@@ -22,11 +22,4 @@ class AlgoControllerTest {
                 .andDo(print())
                 .andExpect(status().isOk());
     }
-
-    @Test
-    public void shouldReturn_404() throws Exception {
-        this.mockMvc.perform(post("/algo/10/execute"))
-                .andDo(print())
-                .andExpect(status().isNotFound());
-    }
 }

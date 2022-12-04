@@ -1,5 +1,5 @@
 package com.quik.algo;
 
-interface SignalHandler {
+public interface SignalHandler {
     void handleSignal(int signal);
 }
